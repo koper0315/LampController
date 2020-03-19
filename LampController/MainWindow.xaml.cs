@@ -156,7 +156,7 @@ namespace LampController
             {
                 if (sector_1_on == false)
                 {
-                    serial_port.Write("3on");
+                    serial_port.Write("5on");
                     button_sector_1.Background = Brushes.Red;
                     sector_1_on = true;
                     listBox_logs.Items.Insert(0, serial_port.ReadLine());
@@ -164,7 +164,7 @@ namespace LampController
                 }
                 else
                 {
-                    serial_port.Write("3off");
+                    serial_port.Write("5off");
                     button_sector_1.Background = Brushes.DarkGray;
                     sector_1_on = false;
                     all_sector_check();
@@ -182,7 +182,7 @@ namespace LampController
             {
                 if (sector_2_on == false)
                 {
-                    serial_port.Write("4on");
+                    serial_port.Write("2on");
                     button_sector_2.Background = Brushes.Red;
                     sector_2_on = true;
                     all_sector_check();
@@ -190,7 +190,7 @@ namespace LampController
                 }
                 else
                 {
-                    serial_port.Write("4off");
+                    serial_port.Write("2off");
                     button_sector_2.Background = Brushes.DarkGray;
                     sector_2_on = false;
                     all_sector_check();
@@ -208,7 +208,7 @@ namespace LampController
             {
                 if (sector_3_on == false)
                 {
-                    serial_port.Write("5on");
+                    serial_port.Write("3on");
                     button_sector_3.Background = Brushes.Red;
                     sector_3_on = true;
                     all_sector_check();
@@ -216,7 +216,7 @@ namespace LampController
                 }
                 else
                 {
-                    serial_port.Write("5off");
+                    serial_port.Write("3off");
                     button_sector_3.Background = Brushes.DarkGray;
                     sector_3_on = false;
                     all_sector_check();
@@ -234,7 +234,7 @@ namespace LampController
             {
                 if (sector_4_on == false)
                 {
-                    serial_port.Write("2on");
+                    serial_port.Write("4on");
                     button_sector_4.Background = Brushes.Red;
                     sector_4_on = true;
                     all_sector_check();
@@ -242,7 +242,7 @@ namespace LampController
                 }
                 else
                 {
-                    serial_port.Write("2off");
+                    serial_port.Write("4off");
                     button_sector_4.Background = Brushes.DarkGray;
                     sector_4_on = false;
                     all_sector_check();
